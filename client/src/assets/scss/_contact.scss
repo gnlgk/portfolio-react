@@ -1,0 +1,59 @@
+/* contact */
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/sky-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .contact {
+        padding: 6vw 6vw 4vw;
+        font-size: 12vw;
+        font-family: var(--fontNGL);
+        line-height: 12.2vw;
+    }
+
+    .text__info {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        h5,
+        p:first-child {
+            font-weight: bold;
+        }
+
+        h5,
+        p {
+            padding: 0 100px;
+            font-family: var(--fontNGL);
+            font-size: 1.2rem;
+        }
+
+        .kor {
+            font-family: var(--fontKor);
+            font-size: 1.2rem;
+        }
+
+        li a {
+            padding: 0 100px;
+            font-size: 1.2rem;
+            font-family: var(--fontNGL);
+        }
+    }
+
+    @media (max-width: 912px) {
+        .text__info {
+
+            h5,
+            p,
+            li a {
+                padding: 0 30px;
+            }
+        }
+    }
+}
